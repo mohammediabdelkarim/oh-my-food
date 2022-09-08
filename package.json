@@ -1,0 +1,22 @@
+{
+  "name": "projet-3",
+  "version": "1.0.0",
+  "description": "projet 3 ohmyfood",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mohammediabdelkarim/oh-my-food.git"
+  },
+  "author": "karim",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mohammediabdelkarim/oh-my-food/issues"
+  },
+  "homepage": "https://github.com/mohammediabdelkarim/oh-my-food#readme",
+  "dependencies": {
+    "sass": "^1.54.9"
+  }
+}
