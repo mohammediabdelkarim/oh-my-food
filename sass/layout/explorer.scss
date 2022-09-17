@@ -1,4 +1,6 @@
-@use "../utils/box-shadow.scss";
+
+
+@use "../utils/mixins.scss";
 
 .explorer{
     text-align: center;
@@ -18,11 +20,11 @@
     border: none;
     border-radius: 2rem;
     margin-top: 1rem;
-    @include box-shadow.base-shadow;
-
+    @include mixins.base-shadow;
     transition: transform 200ms;
-    background-image: linear-gradient(to top, rgba(147,86,220,0.9),rgba(255,121,218,0.9));
-}
+    @include mixins.gradient(0.9);
+    }
+
 & button:hover {
    transform: scale(1.02); 
    opacity: 0.9;

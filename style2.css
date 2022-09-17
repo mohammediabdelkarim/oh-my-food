@@ -6,14 +6,27 @@
   box-sizing: border-box;
 }
 
-.body {
+body {
   margin: 0px;
-  font-family: "roboto", sans-serif;
-  margin: 0;
+  font-family: "Roboto", sans-serif;
 }
 
 main {
-  padding: 1 1rem;
+  /*padding: 1 1rem;*/
+}
+
+h2 {
+  padding: 2rem 0;
+  margin: 0;
+}
+
+h3, p {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
 }
 
 header {
@@ -64,11 +77,174 @@ header {
   opacity: 0.9;
 }
 
+.menus {
+  background-color: #F6F6F6;
+  margin-bottom: 0rem;
+}
+.menus .h2 {
+  margin-bottom: 2rem;
+}
+.menus .menus__cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  flex-wrap: wrap;
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+  gap: 2rem;
+}
+@media (max-width: 768px) {
+  .menus .menus__cards {
+    grid-template-columns: 1fr;
+  }
+}
+.menus .menus__cards .new {
+  position: relative;
+}
+.menus .menus__cards .new::before {
+  content: "Nouveau";
+  position: absolute;
+  height: 2rem;
+  width: 4rem;
+  background-color: #99e2d0;
+  color: #1b6150;
+  display: grid;
+  place-items: center;
+  right: 1rem;
+  top: 1rem;
+  border-radius: 0.5rem;
+}
+.menus .card__image {
+  height: 15rem;
+  background-size: cover;
+  border-radius: 1rem 1rem 0 0;
+}
+.menus .card__image1 {
+  background-image: url("/Users/abdelkarimmohammedi/Documents/projet 3/assets/menu-1.jpg");
+}
+.menus .card__description {
+  position: relative;
+  background-color: white;
+  border-radius: 0 0 1rem 1rem;
+}
+.menus .card__description h3, .menus .card__description p {
+  padding-top: 0.3rem;
+}
+.menus .card__description i {
+  font-size: 1.5rem;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 1rem;
+}
+.menus .card__description .fas {
+  color: transparent;
+  background-image: linear-gradient(to top, rgb(147, 86, 220), rgb(255, 121, 218));
+  background-clip: text;
+  -webkit-background-clip: text;
+  opacity: 0;
+  transition: all 200ms ease-in-out;
+}
+.menus .card__description:hover .fas {
+  opacity: 1;
+  transform: translateY(-50%) scale(1.2);
+}
+.menus .card__image2 {
+  background-image: url("/Users/abdelkarimmohammedi/Documents/projet 3/assets/menu-2.jpg");
+}
+.menus .card__description {
+  position: relative;
+  background-color: white;
+  border-radius: 0 0 1rem 1rem;
+}
+.menus .card__description h3, .menus .card__description p {
+  padding-top: 0.3rem;
+}
+.menus .card__description i {
+  font-size: 1.5rem;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 1rem;
+}
+.menus .card__description .fas {
+  color: transparent;
+  background-image: linear-gradient(to top, rgb(147, 86, 220), rgb(255, 121, 218));
+  background-clip: text;
+  -webkit-background-clip: text;
+  opacity: 0;
+  transition: all 200ms ease-in-out;
+}
+.menus .card__description:hover .fas {
+  opacity: 1;
+  transform: translateY(-50%) scale(1.2);
+}
+.menus .card__image3 {
+  background-image: url("/Users/abdelkarimmohammedi/Documents/projet 3/assets/menu-3.jpg");
+}
+.menus .card__description {
+  position: relative;
+  background-color: white;
+  border-radius: 0 0 1rem 1rem;
+}
+.menus .card__description h3, .menus .card__description p {
+  padding-top: 0.3rem;
+}
+.menus .card__description i {
+  font-size: 1.5rem;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 1rem;
+}
+.menus .card__description .fas {
+  color: transparent;
+  background-image: linear-gradient(to top, rgb(147, 86, 220), rgb(255, 121, 218));
+  background-clip: text;
+  -webkit-background-clip: text;
+  opacity: 0;
+  transition: all 200ms ease-in-out;
+}
+.menus .card__description:hover .fas {
+  opacity: 1;
+  transform: translateY(-50%) scale(1.2);
+}
+.menus .card__image4 {
+  background-image: url("/Users/abdelkarimmohammedi/Documents/projet 3/assets/menu-4.jpg");
+}
+.menus .card__description {
+  position: relative;
+  background-color: white;
+  border-radius: 0 0 1rem 1rem;
+}
+.menus .card__description h3, .menus .card__description p {
+  padding-top: 0.3rem;
+}
+.menus .card__description i {
+  font-size: 1.5rem;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 1rem;
+}
+.menus .card__description .fas {
+  color: transparent;
+  background-image: linear-gradient(to top, rgb(147, 86, 220), rgb(255, 121, 218));
+  background-clip: text;
+  -webkit-background-clip: text;
+  opacity: 0;
+  transition: all 200ms ease-in-out;
+}
+.menus .card__description:hover .fas {
+  opacity: 1;
+  transform: translateY(-50%) scale(1.2);
+}
+
 .tuto {
   counter-reset: steps;
 }
 .tuto ol {
   display: flex;
+  margin: 0.5rem;
   gap: 2rem;
 }
 @media (max-width: 767px) {
@@ -95,7 +271,8 @@ header {
   border-radius: 50%;
   background-color: #9356dc;
   position: absolute;
-  bottom: 0.5rem;
+  top: 50%;
+  transform: translateY(-50%);
   left: -1rem;
 }
 .tuto li:hover {
@@ -103,6 +280,20 @@ header {
 }
 .tuto li i.fas {
   margin-right: 1rem;
+}
+
+footer {
+  background-color: #353535;
+  padding: 1rem 2rem;
+  color: white;
+}
+footer h2 {
+  font-family: "shrikhand", "sans serif";
+  font-weight: 500;
+  padding: 1rem 0;
+}
+footer p {
+  padding: 0.2rem;
 }
 
 /*# sourceMappingURL=style2.css.map */

@@ -1,14 +1,16 @@
-@use "../utils/box-shadow.scss";
-@use "../utils/zoom.scss";
+
+
 @use "../utils/variables.scss";
 @use "../utils/colors.scss";
+@use "../layout/menus.scss";
+@use "../utils/mixins.scss";
 
 
 .tuto{
     counter-reset: steps;
     & ol{
         display: flex;
-       
+        margin: 0.5rem;
         gap: 2rem;
 
         @media  ( max-width: 767px ){
@@ -31,7 +33,8 @@
            border-radius: 50%; 
            background-color: colors.$purple;
            position: absolute;
-           bottom:0.5* variables.$tuto-bullet-height;
+           top: 50%;
+           transform: translateY(-50%);
            left: -1* variables.$tuto-bullet-height;
            
         }
@@ -41,9 +44,9 @@
         padding: 1rem 2rem;
         flex-grow :1 ;
         border-radius: 1rem;
-        @include box-shadow.base-shadow;
+        @include mixins.base-shadow;
         &:hover{
-            @include zoom.transform-zoom;
+            @include mixins.transform-zoom;
         }
         & i.fas{
             margin-right: 1rem;

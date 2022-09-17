@@ -1,0 +1,108 @@
+@use "../utils/variables.scss";
+@use "../utils/colors.scss";
+
+@use "../utils/mixins.scss";
+
+
+
+
+
+.menus{
+    background-color: #F6F6F6;
+    margin-bottom: 0rem;
+    .h2{
+        margin-bottom: 2rem;
+
+    }
+
+    .menus__cards{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        flex-wrap: wrap;
+        margin-left: 0.5rem;
+        margin-right: 0.5rem;
+        gap: 2rem;
+        @media (max-width:variables.$breakpoint){
+            grid-template-columns:  1fr;
+            }
+        .new {
+            position: relative;
+        }    
+
+
+        .new::before{
+            content: "Nouveau";
+            position: absolute;
+            height: 2rem;
+            width: 4rem;
+            background-color: colors.$color-green;
+            color: darken(colors.$color-green, 50%);
+            display: grid;
+            place-items: center;
+            right: 1rem;
+            top: 1rem;
+            border-radius: 0.5rem;
+
+
+        }    
+        }
+
+    
+    
+    
+    
+        .card {
+        
+        &__image {
+            height: 15rem;
+            background-size: cover;
+            border-radius: 1rem 1rem 0 0;
+        }
+
+        @for $i from 1 through 4 {
+            &__image#{$i}{
+                
+                background-image: url("/Users/abdelkarimmohammedi/Documents/projet 3/assets/menu-#{$i}.jpg");    
+            
+            }
+            &__description{
+                position: relative;
+                background-color: white;
+                border-radius: 0 0 1rem 1rem;
+                
+                h3,p{
+                    padding-top: 0.3rem;
+                }
+                i{
+                    font-size: 1.5rem;
+                    position: absolute;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    right: 1rem;
+                }
+                .fas{
+                    color: transparent;
+                    @include mixins.gradient(1);
+                    background-clip: text;
+                    -webkit-background-clip: text;
+                    opacity: 0;
+                    transition: all 200ms ease-in-out;
+
+                }
+                &:hover .fas{
+                    opacity: 1;
+                    transform: translateY(-50%) scale(1.2);
+                }
+            }
+        }
+        
+
+
+        
+
+
+
+    }
+
+
+}
