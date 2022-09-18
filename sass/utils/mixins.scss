@@ -1,3 +1,6 @@
+
+
+
 @mixin gradient($opacity: 0.9) {
     background-image: linear-gradient(to top, 
     rgba(147,86,220,$opacity),
@@ -9,5 +12,28 @@
 }
 @mixin transform-zoom {
     transform: scale(1.02);
+    
+}
+@mixin heart/*($opacity: 1, $font-weight: 500, $color: inherit)*/ 
+{
+    padding-top: 0.3rem;
+    font-size: 1.5rem;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 1rem;
+    color: black;
+    background-clip: text;
+    -webkit-background-clip: text;
+    opacity: 1;
+    transition: all 200ms ease-in-out;
+    display: inline-block;
+    font-style: normal;
+    font-variant: normal;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    font-family: "Font Awesome 5 Free";
+    font-weight: 500;
+    content: "\f004";
     
 }
