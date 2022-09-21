@@ -11,16 +11,8 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
-main {
-  /*padding: 1 1rem;*/
-}
-
-h2 {
-  padding: 2rem 0;
-  margin: 0;
-}
-
-h3, p {
+h2, h1, h3, h4, h5, h6, p {
+  padding: 0rem 0;
   margin: 0;
 }
 
@@ -68,8 +60,9 @@ header {
   border: none;
   border-radius: 2rem;
   margin-top: 1rem;
-  box-shadow: 2px 1px 16px -3px #000000;
+  cursor: pointer;
   transition: transform 200ms;
+  box-shadow: 2px 1px 16px -3px #000000;
   background-image: linear-gradient(to top, rgba(147, 86, 220, 0.9), rgba(255, 121, 218, 0.9));
 }
 .explorer button:hover {
@@ -77,14 +70,17 @@ header {
   opacity: 0.9;
 }
 
-.menus {
+#homepage {
+  background-color: #F6F6F6;
+}
+#homepage .menus {
   background-color: #F6F6F6;
   margin-bottom: 0rem;
 }
-.menus .h2 {
+#homepage .menus .h2 {
   margin-bottom: 2rem;
 }
-.menus .menus__cards {
+#homepage .menus .menus__cards {
   display: grid;
   grid-template-columns: 1fr 1fr;
   flex-wrap: wrap;
@@ -92,14 +88,14 @@ header {
   gap: 2rem;
 }
 @media (max-width: 768px) {
-  .menus .menus__cards {
+  #homepage .menus .menus__cards {
     grid-template-columns: 1fr;
   }
 }
-.menus .menus__cards .new {
+#homepage .menus .menus__cards .new {
   position: relative;
 }
-.menus .menus__cards .new::before {
+#homepage .menus .menus__cards .new::before {
   content: "Nouveau";
   position: absolute;
   height: 2rem;
@@ -112,20 +108,20 @@ header {
   top: 1rem;
   border-radius: 0.5rem;
 }
-.menus .card__image {
-  height: 15rem;
+#homepage .menus .card__image {
+  height: 19rem;
   background-size: cover;
   border-radius: 1rem 1rem 0 0;
 }
-.menus .card__image1 {
+#homepage .menus .card__image1 {
   background-image: url("/Users/abdelkarimmohammedi/Documents/projet 3/assets/menu-1.jpg");
 }
-.menus .card__description {
+#homepage .menus .card__description {
   position: relative;
   background-color: white;
   border-radius: 0 0 1rem 1rem;
 }
-.menus .card__description::before {
+#homepage .menus .card__description::before {
   padding-top: 0.3rem;
   font-size: 1.5rem;
   position: absolute;
@@ -146,7 +142,7 @@ header {
   font-weight: 500;
   content: "\f004";
 }
-.menus .card__description::after {
+#homepage .menus .card__description::after {
   padding-top: 0.3rem;
   font-size: 1.5rem;
   position: absolute;
@@ -172,26 +168,26 @@ header {
   color: transparent;
   font-weight: 900;
 }
-.menus .card__description:hover::after {
+#homepage .menus .card__description:hover::after {
   opacity: 1;
   transform: translateY(-50%) scale(1.2);
 }
-.menus .card h3, .menus .card p {
+#homepage .menus .card h3, #homepage .menus .card p {
   padding: 0.3rem;
 }
-.menus .card:hover .fas {
+#homepage .menus .card:hover .fas {
   opacity: 1;
   transform: translateY(-50%) scale(1.2);
 }
-.menus .card__image2 {
+#homepage .menus .card__image2 {
   background-image: url("/Users/abdelkarimmohammedi/Documents/projet 3/assets/menu-2.jpg");
 }
-.menus .card__description {
+#homepage .menus .card__description {
   position: relative;
   background-color: white;
   border-radius: 0 0 1rem 1rem;
 }
-.menus .card__description::before {
+#homepage .menus .card__description::before {
   padding-top: 0.3rem;
   font-size: 1.5rem;
   position: absolute;
@@ -212,7 +208,7 @@ header {
   font-weight: 500;
   content: "\f004";
 }
-.menus .card__description::after {
+#homepage .menus .card__description::after {
   padding-top: 0.3rem;
   font-size: 1.5rem;
   position: absolute;
@@ -238,26 +234,26 @@ header {
   color: transparent;
   font-weight: 900;
 }
-.menus .card__description:hover::after {
+#homepage .menus .card__description:hover::after {
   opacity: 1;
   transform: translateY(-50%) scale(1.2);
 }
-.menus .card h3, .menus .card p {
+#homepage .menus .card h3, #homepage .menus .card p {
   padding: 0.3rem;
 }
-.menus .card:hover .fas {
+#homepage .menus .card:hover .fas {
   opacity: 1;
   transform: translateY(-50%) scale(1.2);
 }
-.menus .card__image3 {
+#homepage .menus .card__image3 {
   background-image: url("/Users/abdelkarimmohammedi/Documents/projet 3/assets/menu-3.jpg");
 }
-.menus .card__description {
+#homepage .menus .card__description {
   position: relative;
   background-color: white;
   border-radius: 0 0 1rem 1rem;
 }
-.menus .card__description::before {
+#homepage .menus .card__description::before {
   padding-top: 0.3rem;
   font-size: 1.5rem;
   position: absolute;
@@ -278,7 +274,7 @@ header {
   font-weight: 500;
   content: "\f004";
 }
-.menus .card__description::after {
+#homepage .menus .card__description::after {
   padding-top: 0.3rem;
   font-size: 1.5rem;
   position: absolute;
@@ -304,26 +300,26 @@ header {
   color: transparent;
   font-weight: 900;
 }
-.menus .card__description:hover::after {
+#homepage .menus .card__description:hover::after {
   opacity: 1;
   transform: translateY(-50%) scale(1.2);
 }
-.menus .card h3, .menus .card p {
+#homepage .menus .card h3, #homepage .menus .card p {
   padding: 0.3rem;
 }
-.menus .card:hover .fas {
+#homepage .menus .card:hover .fas {
   opacity: 1;
   transform: translateY(-50%) scale(1.2);
 }
-.menus .card__image4 {
+#homepage .menus .card__image4 {
   background-image: url("/Users/abdelkarimmohammedi/Documents/projet 3/assets/menu-4.jpg");
 }
-.menus .card__description {
+#homepage .menus .card__description {
   position: relative;
   background-color: white;
   border-radius: 0 0 1rem 1rem;
 }
-.menus .card__description::before {
+#homepage .menus .card__description::before {
   padding-top: 0.3rem;
   font-size: 1.5rem;
   position: absolute;
@@ -344,7 +340,7 @@ header {
   font-weight: 500;
   content: "\f004";
 }
-.menus .card__description::after {
+#homepage .menus .card__description::after {
   padding-top: 0.3rem;
   font-size: 1.5rem;
   position: absolute;
@@ -370,14 +366,14 @@ header {
   color: transparent;
   font-weight: 900;
 }
-.menus .card__description:hover::after {
+#homepage .menus .card__description:hover::after {
   opacity: 1;
   transform: translateY(-50%) scale(1.2);
 }
-.menus .card h3, .menus .card p {
+#homepage .menus .card h3, #homepage .menus .card p {
   padding: 0.3rem;
 }
-.menus .card:hover .fas {
+#homepage .menus .card:hover .fas {
   opacity: 1;
   transform: translateY(-50%) scale(1.2);
 }
@@ -437,6 +433,194 @@ footer h2 {
 }
 footer p {
   padding: 0.2rem;
+}
+
+@keyframes quarterspin {
+  0% {
+    transform: rotate(-270deg);
+  }
+  100% {
+    transform: rotate(0);
+  }
+}
+#page-resto header::before {
+  display: inline-block;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "\f060";
+  position: absolute;
+  left: 1rem;
+  top: 35%;
+  font-size: 20px;
+}
+#page-resto section.order {
+  border: 1px solid red;
+  height: 30vh;
+  display: grid;
+  place-items: center;
+}
+#page-resto section.order button {
+  color: white;
+  font-weight: 300;
+  font-size: 1.5rem;
+  padding: 1rem 2rem;
+  border: none;
+  border-radius: 2rem;
+  margin-top: 1rem;
+  cursor: pointer;
+  transition: transform 200ms;
+  box-shadow: 2px 1px 16px -3px #000000;
+  background-image: linear-gradient(to top, rgba(147, 86, 220, 0.9), rgba(255, 121, 218, 0.9));
+}
+#page-resto section.order button:hover {
+  transform: scale(1.02);
+  opacity: 0.9;
+}
+#page-resto .banner img {
+  width: 100%;
+  height: 70vh;
+  object-fit: cover;
+  object-position: center bottom;
+  display: block;
+}
+#page-resto .resto__title {
+  margin-top: -2rem;
+}
+#page-resto .resto__title h2 {
+  background: white;
+  position: relative;
+  font-family: "shrikhand", "cursive";
+  padding: 0rem 1rem;
+  border-radius: 2rem 2rem 0 0;
+  background-color: #f6f6f6;
+}
+#page-resto .resto__title h2::before {
+  padding-top: 0.3rem;
+  font-size: 1.5rem;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 1rem;
+  color: black;
+  background-clip: text;
+  -webkit-background-clip: text;
+  opacity: 1;
+  transition: all 200ms ease-in-out;
+  display: inline-block;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  font-family: "Font Awesome 5 Free";
+  font-weight: 500;
+  content: "\f004";
+}
+#page-resto .resto__title h2::after {
+  padding-top: 0.3rem;
+  font-size: 1.5rem;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 1rem;
+  color: black;
+  background-clip: text;
+  -webkit-background-clip: text;
+  opacity: 1;
+  transition: all 200ms ease-in-out;
+  display: inline-block;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  font-family: "Font Awesome 5 Free";
+  font-weight: 500;
+  content: "\f004";
+  /*(0,500,transparent);*/
+  background-image: linear-gradient(to top, rgb(147, 86, 220), rgb(255, 121, 218));
+  opacity: 0;
+  color: transparent;
+  font-weight: 900;
+}
+#page-resto .resto__title h2:hover::after {
+  opacity: 1;
+  transform: translateY(-50%) scale(1.2);
+}
+#page-resto .resto-main {
+  padding: 2rem 1rem;
+  background-color: #f6f6f6;
+}
+#page-resto .menus {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(3, 1fr);
+}
+#page-resto .menus h3 {
+  text-transform: uppercase;
+  font-weight: 400;
+  position: relative;
+}
+#page-resto .menus h3::after {
+  content: "";
+  height: 0.25rem;
+  width: 1.25rem;
+  background-color: #99e2d0;
+  position: absolute;
+  top: 1.3rem;
+  left: 0rem;
+  width: 3rem;
+}
+@media (max-width: 768px) {
+  #page-resto .menus {
+    grid-template-columns: 1fr;
+  }
+}
+#page-resto .menus .menus__category .menu-item {
+  display: flex;
+  overflow: hidden;
+  box-shadow: 2px 1px 16px -3px #000000;
+  border-radius: 1rem;
+  background-color: white;
+}
+#page-resto .menus .menus__category .menu-item .menu-item__price {
+  margin-left: auto;
+  font-weight: 900;
+  padding: 1rem;
+  display: flex;
+  align-items: flex-end;
+}
+#page-resto .menus .menus__category .menu-item .menu-item__description {
+  padding: 1rem;
+}
+#page-resto .menus .menus__category .menu-item .menu-item__check {
+  background-color: #99e2d0;
+  border-radius: 0 1rem 1rem 0;
+  margin-right: -4rem;
+  width: 4rem;
+  transition: 600ms;
+  display: grid;
+  place-items: center;
+}
+#page-resto .menus .menus__category .menu-item .menu-item__check i {
+  display: grid;
+  place-items: center;
+  background-color: white;
+  aspect-ratio: 1;
+  width: 2rem;
+  border-radius: 1rem;
+  color: #99e2d0;
+}
+#page-resto .menus .menus__category .menu-item:hover {
+  cursor: pointer;
+}
+#page-resto .menus .menus__category .menu-item:hover .menu-item__check {
+  margin-right: 0;
+}
+#page-resto .menus .menus__category .menu-item:hover i {
+  animation: quarterspin 0.5s ease-in-out;
 }
 
 /*# sourceMappingURL=style2.css.map */
