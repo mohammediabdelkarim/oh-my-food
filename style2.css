@@ -12,7 +12,7 @@ body {
 }
 
 h2, h1, h3, h4, h5, h6, p {
-  padding: 0rem 0;
+  padding: 0rem 0.5rem;
   margin: 0;
 }
 
@@ -45,11 +45,11 @@ header {
 .explorer {
   text-align: center;
 }
-.explorer .h2 {
+.explorer h2 {
   margin-top: 2rem;
   font-size: 2rem;
 }
-.explorer .p {
+.explorer p {
   font-size: 1rem;
 }
 .explorer button {
@@ -70,6 +70,29 @@ header {
   opacity: 0.9;
 }
 
+.loader {
+  position: fixed;
+  display: grid;
+  place-items: center;
+  height: 100vh;
+  inset: 0;
+  background-color: #9356dc;
+  opacity: 0.9;
+  z-index: 1;
+  animation: disappear 2s;
+  animation-fill-mode: forwards;
+  animation-delay: 3s;
+  transform-origin: top;
+}
+
+@keyframes disappear {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(0);
+  }
+}
 #homepage {
   background-color: #F6F6F6;
 }
@@ -435,6 +458,16 @@ footer p {
   padding: 0.2rem;
 }
 
+@keyframes appear {
+  0% {
+    transform: translateY(70%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
 @keyframes quarterspin {
   0% {
     transform: rotate(-270deg);
@@ -584,6 +617,17 @@ footer p {
   box-shadow: 2px 1px 16px -3px #000000;
   border-radius: 1rem;
   background-color: white;
+  animation: appear 1s;
+  animation-fill-mode: both;
+}
+#page-resto .menus .menus__category .menu-item:nth-child(1) {
+  animation-delay: 100ms;
+}
+#page-resto .menus .menus__category .menu-item:nth-child(2) {
+  animation-delay: 200ms;
+}
+#page-resto .menus .menus__category .menu-item:nth-child(3) {
+  animation-delay: 300ms;
 }
 #page-resto .menus .menus__category .menu-item .menu-item__price {
   margin-left: auto;

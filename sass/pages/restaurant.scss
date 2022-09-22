@@ -63,7 +63,7 @@
     .resto-main{
         padding: 2rem 1rem;
         background-color: colors.$lightergrey;
-
+        
     
     }
     .menus{
@@ -90,24 +90,32 @@
     
         display: grid;
         gap: 1rem;
-        grid-template-columns: repeat(3,1fr) ;
+        grid-template-columns: repeat(3, 1fr) ;
         @media (max-width: variables.$breakpoint){
              grid-template-columns: 1fr;
         }
         .menus__category {
-            
+           
             
            
 
-
-            .menu-item {
+            .menu-item { 
+                
+                @for $i from 1 through 3 {
+                    &:nth-child(#{$i}) {
+                        animation-delay: 100ms * $i;
+                    }
+            
+                }
                 display: flex;
                 overflow: hidden;
                 @include mixins.base-shadow;
-                 border-radius: 1rem;
-                 background-color: white;
+                border-radius: 1rem;
+                background-color: white;
+                animation: appear 1s;
+                animation-fill-mode: both;
                 
-             
+
                 
 
                 .menu-item__price{
