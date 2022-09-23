@@ -27,7 +27,7 @@
     place-items: center;
     height: 100vh;
     inset: 0;
-    background-color: colors.$purple;
+    background-color: #fff;
     opacity: 0.9;
     z-index: 1;
     animation: disappear 2s ;
@@ -42,5 +42,10 @@
     }
     100%{
         transform: scale(0);
+    }
+}
+@keyframes spin{
+    to {
+        transform: rotate(360deg);
     }
 }

@@ -76,7 +76,7 @@ header {
   place-items: center;
   height: 100vh;
   inset: 0;
-  background-color: #9356dc;
+  background-color: #fff;
   opacity: 0.9;
   z-index: 1;
   animation: disappear 2s;
@@ -91,6 +91,11 @@ header {
   }
   100% {
     transform: scale(0);
+  }
+}
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
   }
 }
 #homepage {
@@ -432,6 +437,7 @@ header {
   place-items: center;
   border-radius: 50%;
   background-color: #9356dc;
+  color: white;
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
@@ -439,6 +445,7 @@ header {
 }
 .tuto li:hover {
   transform: scale(1.02);
+  background-color: #f2eafb;
 }
 .tuto li i.fas {
   margin-right: 1rem;
@@ -491,7 +498,6 @@ footer p {
   font-size: 20px;
 }
 #page-resto section.order {
-  border: 1px solid red;
   height: 30vh;
   display: grid;
   place-items: center;
@@ -517,7 +523,7 @@ footer p {
   width: 100%;
   height: 70vh;
   object-fit: cover;
-  object-position: center bottom;
+  /*object-position: center bottom;*/
   display: block;
 }
 #page-resto .resto__title {
@@ -589,7 +595,6 @@ footer p {
 #page-resto .menus {
   display: grid;
   gap: 1rem;
-  grid-template-columns: repeat(3, 1fr);
 }
 #page-resto .menus h3 {
   text-transform: uppercase;
@@ -611,6 +616,51 @@ footer p {
     grid-template-columns: 1fr;
   }
 }
+#page-resto .menus .menus__category:nth-child(1) {
+  animation: appear 600ms;
+}
+#page-resto .menus .menus__category:nth-child(2) {
+  animation: appear 1200ms;
+}
+#page-resto .menus .menus__category:nth-child(3) {
+  animation: appear 1800ms;
+}
+#page-resto .menus .menus__category:nth-child(4) {
+  animation: appear 2400ms;
+}
+#page-resto .menus .menus__category:nth-child(5) {
+  animation: appear 3000ms;
+}
+#page-resto .menus .menus__category:nth-child(6) {
+  animation: appear 3600ms;
+}
+#page-resto .menus .menus__category:nth-child(7) {
+  animation: appear 4200ms;
+}
+#page-resto .menus .menus__category:nth-child(8) {
+  animation: appear 4800ms;
+}
+#page-resto .menus .menus__category:nth-child(9) {
+  animation: appear 5400ms;
+}
+#page-resto .menus .menus__category:nth-child(10) {
+  animation: appear 6000ms;
+}
+#page-resto .menus .menus__category:nth-child(11) {
+  animation: appear 6600ms;
+}
+#page-resto .menus .menus__category:nth-child(12) {
+  animation: appear 7200ms;
+}
+#page-resto .menus .menus__category:nth-child(13) {
+  animation: appear 7800ms;
+}
+#page-resto .menus .menus__category:nth-child(14) {
+  animation: appear 8400ms;
+}
+#page-resto .menus .menus__category:nth-child(15) {
+  animation: appear 9000ms;
+}
 #page-resto .menus .menus__category .menu-item {
   display: flex;
   overflow: hidden;
@@ -619,15 +669,6 @@ footer p {
   background-color: white;
   animation: appear 1s;
   animation-fill-mode: both;
-}
-#page-resto .menus .menus__category .menu-item:nth-child(1) {
-  animation-delay: 100ms;
-}
-#page-resto .menus .menus__category .menu-item:nth-child(2) {
-  animation-delay: 200ms;
-}
-#page-resto .menus .menus__category .menu-item:nth-child(3) {
-  animation-delay: 300ms;
 }
 #page-resto .menus .menus__category .menu-item .menu-item__price {
   margin-left: auto;
@@ -652,7 +693,7 @@ footer p {
   display: grid;
   place-items: center;
   background-color: white;
-  aspect-ratio: 1;
+  height: 2rem;
   width: 2rem;
   border-radius: 1rem;
   color: #99e2d0;
