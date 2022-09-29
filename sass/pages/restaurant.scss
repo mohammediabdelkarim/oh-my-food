@@ -39,7 +39,7 @@
         width: 100%;
         height: 70vh;
         object-fit: cover;
-        /*object-position: center bottom;*/
+        
         display: block;
 
     }
@@ -47,18 +47,19 @@
 
         margin-top: -2rem;
 
-    
+          
 
         h2{
         background: white;    
         position: relative;
         font-family: "shrikhand" , "cursive" ;
         padding: 0rem 1rem; 
-        
-        @include mixins.heart-animated; 
+        border: solid 1px red;
+        @include mixins.heart-animated;
         border-radius: 2rem 2rem 0 0;
         background-color: colors.$lightergrey;
         }
+           
     }
     .resto-main{
         padding: 2rem 1rem;
@@ -102,7 +103,7 @@
             @for $i from 1 through 15 {
                     &:nth-child(#{$i}) {
                        
-                        animation: appear 600ms * $i;
+                        animation: appear 300ms * $i;
                     }
             
                 }
@@ -116,7 +117,7 @@
                 @include mixins.base-shadow;
                 border-radius: 1rem;
                 background-color: white;
-                animation: appear 1s;
+                animation: appear 700ms;
                 animation-fill-mode: both;
                 
 

@@ -55,7 +55,8 @@
         &:hover::after {
         opacity: 1;
         transform: translateY(-50%) scale(1.2);
-
+        border: solid 1px red;
+        
         }
 
 }

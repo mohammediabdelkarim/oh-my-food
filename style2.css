@@ -142,7 +142,7 @@ header {
   border-radius: 1rem 1rem 0 0;
 }
 #homepage .menus .card__image1 {
-  background-image: url("/Users/abdelkarimmohammedi/Documents/projet 3/assets/menu-1.jpg");
+  background-image: url("assets/menu-1.jpg");
 }
 #homepage .menus .card__description {
   position: relative;
@@ -199,6 +199,7 @@ header {
 #homepage .menus .card__description:hover::after {
   opacity: 1;
   transform: translateY(-50%) scale(1.2);
+  border: solid 1px red;
 }
 #homepage .menus .card h3, #homepage .menus .card p {
   padding: 0.3rem;
@@ -208,7 +209,7 @@ header {
   transform: translateY(-50%) scale(1.2);
 }
 #homepage .menus .card__image2 {
-  background-image: url("/Users/abdelkarimmohammedi/Documents/projet 3/assets/menu-2.jpg");
+  background-image: url("assets/menu-2.jpg");
 }
 #homepage .menus .card__description {
   position: relative;
@@ -265,6 +266,7 @@ header {
 #homepage .menus .card__description:hover::after {
   opacity: 1;
   transform: translateY(-50%) scale(1.2);
+  border: solid 1px red;
 }
 #homepage .menus .card h3, #homepage .menus .card p {
   padding: 0.3rem;
@@ -274,7 +276,7 @@ header {
   transform: translateY(-50%) scale(1.2);
 }
 #homepage .menus .card__image3 {
-  background-image: url("/Users/abdelkarimmohammedi/Documents/projet 3/assets/menu-3.jpg");
+  background-image: url("assets/menu-3.jpg");
 }
 #homepage .menus .card__description {
   position: relative;
@@ -331,6 +333,7 @@ header {
 #homepage .menus .card__description:hover::after {
   opacity: 1;
   transform: translateY(-50%) scale(1.2);
+  border: solid 1px red;
 }
 #homepage .menus .card h3, #homepage .menus .card p {
   padding: 0.3rem;
@@ -340,7 +343,7 @@ header {
   transform: translateY(-50%) scale(1.2);
 }
 #homepage .menus .card__image4 {
-  background-image: url("/Users/abdelkarimmohammedi/Documents/projet 3/assets/menu-4.jpg");
+  background-image: url("assets/menu-4.jpg");
 }
 #homepage .menus .card__description {
   position: relative;
@@ -397,6 +400,7 @@ header {
 #homepage .menus .card__description:hover::after {
   opacity: 1;
   transform: translateY(-50%) scale(1.2);
+  border: solid 1px red;
 }
 #homepage .menus .card h3, #homepage .menus .card p {
   padding: 0.3rem;
@@ -523,7 +527,6 @@ footer p {
   width: 100%;
   height: 70vh;
   object-fit: cover;
-  /*object-position: center bottom;*/
   display: block;
 }
 #page-resto .resto__title {
@@ -534,6 +537,7 @@ footer p {
   position: relative;
   font-family: "shrikhand", "cursive";
   padding: 0rem 1rem;
+  border: solid 1px red;
   border-radius: 2rem 2rem 0 0;
   background-color: #f6f6f6;
 }
@@ -587,6 +591,7 @@ footer p {
 #page-resto .resto__title h2:hover::after {
   opacity: 1;
   transform: translateY(-50%) scale(1.2);
+  border: solid 1px red;
 }
 #page-resto .resto-main {
   padding: 2rem 1rem;
@@ -617,49 +622,49 @@ footer p {
   }
 }
 #page-resto .menus .menus__category:nth-child(1) {
-  animation: appear 600ms;
+  animation: appear 300ms;
 }
 #page-resto .menus .menus__category:nth-child(2) {
-  animation: appear 1200ms;
+  animation: appear 600ms;
 }
 #page-resto .menus .menus__category:nth-child(3) {
-  animation: appear 1800ms;
+  animation: appear 900ms;
 }
 #page-resto .menus .menus__category:nth-child(4) {
-  animation: appear 2400ms;
+  animation: appear 1200ms;
 }
 #page-resto .menus .menus__category:nth-child(5) {
-  animation: appear 3000ms;
+  animation: appear 1500ms;
 }
 #page-resto .menus .menus__category:nth-child(6) {
-  animation: appear 3600ms;
+  animation: appear 1800ms;
 }
 #page-resto .menus .menus__category:nth-child(7) {
-  animation: appear 4200ms;
+  animation: appear 2100ms;
 }
 #page-resto .menus .menus__category:nth-child(8) {
-  animation: appear 4800ms;
+  animation: appear 2400ms;
 }
 #page-resto .menus .menus__category:nth-child(9) {
-  animation: appear 5400ms;
+  animation: appear 2700ms;
 }
 #page-resto .menus .menus__category:nth-child(10) {
-  animation: appear 6000ms;
+  animation: appear 3000ms;
 }
 #page-resto .menus .menus__category:nth-child(11) {
-  animation: appear 6600ms;
+  animation: appear 3300ms;
 }
 #page-resto .menus .menus__category:nth-child(12) {
-  animation: appear 7200ms;
+  animation: appear 3600ms;
 }
 #page-resto .menus .menus__category:nth-child(13) {
-  animation: appear 7800ms;
+  animation: appear 3900ms;
 }
 #page-resto .menus .menus__category:nth-child(14) {
-  animation: appear 8400ms;
+  animation: appear 4200ms;
 }
 #page-resto .menus .menus__category:nth-child(15) {
-  animation: appear 9000ms;
+  animation: appear 4500ms;
 }
 #page-resto .menus .menus__category .menu-item {
   display: flex;
@@ -667,7 +672,7 @@ footer p {
   box-shadow: 2px 1px 16px -3px #000000;
   border-radius: 1rem;
   background-color: white;
-  animation: appear 1s;
+  animation: appear 700ms;
   animation-fill-mode: both;
 }
 #page-resto .menus .menus__category .menu-item .menu-item__price {
