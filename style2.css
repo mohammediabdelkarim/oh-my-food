@@ -25,8 +25,9 @@ header {
   font-family: "shrikhand", cursive;
   text-align: center;
   box-shadow: 0px 3px 3px 1px grey;
-  padding: 0.2rem;
+  padding: 1.2rem;
   position: relative;
+  background-color: white;
 }
 
 .city {
@@ -34,9 +35,9 @@ header {
   align-items: center;
   justify-content: center;
   gap: 1rem;
-  background-color: #f3f3f3;
+  background-color: #E5E7E9;
   text-align: center;
-  padding: 0.5rem;
+  padding: 1.5rem;
 }
 .city i {
   font-size: 1.5rem;
@@ -44,6 +45,7 @@ header {
 
 .explorer {
   text-align: center;
+  margin-bottom: 3rem;
 }
 .explorer h2 {
   margin-top: 2rem;
@@ -103,7 +105,7 @@ header {
 }
 #homepage .menus {
   background-color: #F6F6F6;
-  margin-bottom: 0rem;
+  margin: 2rem;
 }
 #homepage .menus .h2 {
   margin-bottom: 2rem;
@@ -148,8 +150,12 @@ header {
   position: relative;
   background-color: white;
   border-radius: 0 0 1rem 1rem;
+  /*@include mixins.heart-animated;*/
 }
-#homepage .menus .card__description::before {
+#homepage .menus .card h3, #homepage .menus .card p {
+  padding: 0.3rem;
+}
+#homepage .menus .card h3 i::before, #homepage .menus .card p i::before {
   padding-top: 0.3rem;
   font-size: 1.5rem;
   position: absolute;
@@ -170,7 +176,7 @@ header {
   font-weight: 500;
   content: "\f004";
 }
-#homepage .menus .card__description::after {
+#homepage .menus .card h3 i::after, #homepage .menus .card p i::after {
   padding-top: 0.3rem;
   font-size: 1.5rem;
   position: absolute;
@@ -196,13 +202,9 @@ header {
   color: transparent;
   font-weight: 900;
 }
-#homepage .menus .card__description:hover::after {
+#homepage .menus .card h3 i:hover::after, #homepage .menus .card p i:hover::after {
   opacity: 1;
   transform: translateY(-50%) scale(1.2);
-  border: solid 1px red;
-}
-#homepage .menus .card h3, #homepage .menus .card p {
-  padding: 0.3rem;
 }
 #homepage .menus .card:hover .fas {
   opacity: 1;
@@ -215,8 +217,12 @@ header {
   position: relative;
   background-color: white;
   border-radius: 0 0 1rem 1rem;
+  /*@include mixins.heart-animated;*/
 }
-#homepage .menus .card__description::before {
+#homepage .menus .card h3, #homepage .menus .card p {
+  padding: 0.3rem;
+}
+#homepage .menus .card h3 i::before, #homepage .menus .card p i::before {
   padding-top: 0.3rem;
   font-size: 1.5rem;
   position: absolute;
@@ -237,7 +243,7 @@ header {
   font-weight: 500;
   content: "\f004";
 }
-#homepage .menus .card__description::after {
+#homepage .menus .card h3 i::after, #homepage .menus .card p i::after {
   padding-top: 0.3rem;
   font-size: 1.5rem;
   position: absolute;
@@ -263,13 +269,9 @@ header {
   color: transparent;
   font-weight: 900;
 }
-#homepage .menus .card__description:hover::after {
+#homepage .menus .card h3 i:hover::after, #homepage .menus .card p i:hover::after {
   opacity: 1;
   transform: translateY(-50%) scale(1.2);
-  border: solid 1px red;
-}
-#homepage .menus .card h3, #homepage .menus .card p {
-  padding: 0.3rem;
 }
 #homepage .menus .card:hover .fas {
   opacity: 1;
@@ -282,8 +284,12 @@ header {
   position: relative;
   background-color: white;
   border-radius: 0 0 1rem 1rem;
+  /*@include mixins.heart-animated;*/
 }
-#homepage .menus .card__description::before {
+#homepage .menus .card h3, #homepage .menus .card p {
+  padding: 0.3rem;
+}
+#homepage .menus .card h3 i::before, #homepage .menus .card p i::before {
   padding-top: 0.3rem;
   font-size: 1.5rem;
   position: absolute;
@@ -304,7 +310,7 @@ header {
   font-weight: 500;
   content: "\f004";
 }
-#homepage .menus .card__description::after {
+#homepage .menus .card h3 i::after, #homepage .menus .card p i::after {
   padding-top: 0.3rem;
   font-size: 1.5rem;
   position: absolute;
@@ -330,13 +336,9 @@ header {
   color: transparent;
   font-weight: 900;
 }
-#homepage .menus .card__description:hover::after {
+#homepage .menus .card h3 i:hover::after, #homepage .menus .card p i:hover::after {
   opacity: 1;
   transform: translateY(-50%) scale(1.2);
-  border: solid 1px red;
-}
-#homepage .menus .card h3, #homepage .menus .card p {
-  padding: 0.3rem;
 }
 #homepage .menus .card:hover .fas {
   opacity: 1;
@@ -349,8 +351,12 @@ header {
   position: relative;
   background-color: white;
   border-radius: 0 0 1rem 1rem;
+  /*@include mixins.heart-animated;*/
 }
-#homepage .menus .card__description::before {
+#homepage .menus .card h3, #homepage .menus .card p {
+  padding: 0.3rem;
+}
+#homepage .menus .card h3 i::before, #homepage .menus .card p i::before {
   padding-top: 0.3rem;
   font-size: 1.5rem;
   position: absolute;
@@ -371,7 +377,7 @@ header {
   font-weight: 500;
   content: "\f004";
 }
-#homepage .menus .card__description::after {
+#homepage .menus .card h3 i::after, #homepage .menus .card p i::after {
   padding-top: 0.3rem;
   font-size: 1.5rem;
   position: absolute;
@@ -397,13 +403,9 @@ header {
   color: transparent;
   font-weight: 900;
 }
-#homepage .menus .card__description:hover::after {
+#homepage .menus .card h3 i:hover::after, #homepage .menus .card p i:hover::after {
   opacity: 1;
   transform: translateY(-50%) scale(1.2);
-  border: solid 1px red;
-}
-#homepage .menus .card h3, #homepage .menus .card p {
-  padding: 0.3rem;
 }
 #homepage .menus .card:hover .fas {
   opacity: 1;
@@ -412,11 +414,18 @@ header {
 
 .tuto {
   counter-reset: steps;
+  background-color: white;
+}
+.tuto h2 {
+  margin: 2rem;
+  margin-bottom: -3rem;
+  padding: 2rem 0.5rem;
 }
 .tuto ol {
   display: flex;
   margin: 0.5rem;
   gap: 2rem;
+  padding: 3rem;
 }
 @media (max-width: 767px) {
   .tuto ol {
@@ -427,8 +436,9 @@ header {
   position: relative;
   list-style-type: none;
   background-color: #f6f6f6;
-  padding: 1rem 2rem;
+  padding: 2rem 2rem;
   flex-grow: 1;
+  margin-bottom: 1rem;
   border-radius: 1rem;
   box-shadow: 2px 1px 16px -3px #000000;
 }
@@ -537,11 +547,15 @@ footer p {
   position: relative;
   font-family: "shrikhand", "cursive";
   padding: 0rem 1rem;
-  border: solid 1px red;
+  /*border: solid 1px red;
+  */
   border-radius: 2rem 2rem 0 0;
   background-color: #f6f6f6;
 }
-#page-resto .resto__title h2::before {
+#page-resto .resto__title h2 i {
+  margin-left: 26rem;
+}
+#page-resto .resto__title h2 i::before {
   padding-top: 0.3rem;
   font-size: 1.5rem;
   position: absolute;
@@ -562,7 +576,7 @@ footer p {
   font-weight: 500;
   content: "\f004";
 }
-#page-resto .resto__title h2::after {
+#page-resto .resto__title h2 i::after {
   padding-top: 0.3rem;
   font-size: 1.5rem;
   position: absolute;
@@ -588,10 +602,9 @@ footer p {
   color: transparent;
   font-weight: 900;
 }
-#page-resto .resto__title h2:hover::after {
+#page-resto .resto__title h2 i:hover::after {
   opacity: 1;
   transform: translateY(-50%) scale(1.2);
-  border: solid 1px red;
 }
 #page-resto .resto-main {
   padding: 2rem 1rem;

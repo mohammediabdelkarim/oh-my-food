@@ -54,12 +54,18 @@
         position: relative;
         font-family: "shrikhand" , "cursive" ;
         padding: 0rem 1rem; 
-        border: solid 1px red;
-        @include mixins.heart-animated;
+        /*border: solid 1px red;
+       */
         border-radius: 2rem 2rem 0 0;
         background-color: colors.$lightergrey;
-        }
+        i {
            
+            margin-left: 26rem; 
+            @include mixins.heart-animated;
+        }
+        }
+        
+    
     }
     .resto-main{
         padding: 2rem 1rem;
